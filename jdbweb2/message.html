@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/iconfont.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+		<link href="css/icons-extra.css" rel="stylesheet" />
+		<script type="text/javascript" charset="utf-8">
+		</script>
+		<style>
+			.mui-plus .plus {
+				display: inline;
+			}
+			
+			.plus {
+				display: none;
+			}
+			
+			#topPopover {
+				position: fixed;
+				top: 16px;
+				right: 6px;
+			}
+			
+			#topPopover .mui-popover-arrow {
+				left: auto;
+				right: 6px;
+			}
+			
+			span.mui-icon {
+				font-size: 18px;
+			}
+			
+			.mui-popover {
+				height: 150px;
+				width: 150px;
+			}
+			
+			.mui-popover span.mui-icon {
+				margin-right: 10px;
+			}
+			
+			.mui-content {
+				padding: 44px 0px;
+			}
+			
+			.mui-bar-nav.mui-bar .mui-icon.mui-icon-search {
+				margin-right: 12px;
+			}
+			
+			.mui-title {
+				text-align: left;
+			}
+			
+			.mui-bar .mui-title {
+				left: 10px;
+			}
+			
+			.index-mk {
+				margin: 0 -10px 6px;
+				border-bottom: 1px solid #ddd;
+				padding: 6px;
+			}
+			
+			.mui-row {
+				padding: 4px 10px 4px;
+			}
+			
+			.icon-bg {
+				margin-right: 5px;
+			}
+			
+			.icon-youxiangrenzheng {
+				vertical-align: middle;
+			}
+			
+			.mui-table-view-cell.mui-collapse .mui-table-view {
+				margin-top: 0;
+			}
+			
+			.mui-table-view-cell.mui-collapse .mui-collapse-content {
+				padding: 0 15px 8px 0;
+			}
+			
+			.mui-segmented-control {
+				background: #fff;
+				margin-bottom: 10px;
+				border: none;
+				border-bottom: 1px solid #ddd;
+			}
+			
+			.mui-segmented-control .mui-control-item {
+				border: none;
+				line-height: 24px;
+				padding: 7px 0;
+			}
+			
+			.mui-segmented-control .mui-control-item span {
+				display: block;
+				border-right: 1px solid #ddd;
+			}
+			
+			.mui-segmented-control .mui-control-item.mui-active {
+				background: #fff;
+				color: #0f88eb;
+				border-bottom: 2px solid #0f88eb;
+			}
+			
+			.tx-new {
+				position: relative;
+				width: 52px;
+			}
+			
+			.tx-new span {
+				position: absolute;
+				font-size: 10px;
+				line-height: 1.4;
+				top: -2px;
+				left: 100%;
+				margin-left: -18px;
+				padding: 6px;
+				color: #fff;
+				background: red;
+			}
+			
+			.mui-table-view-cell.mui-collapse .mui-table-view .mui-table-view-cell {
+				padding-left: 22px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<header class="mui-bar mui-bar-nav">
+			<a id="menu" class="mui-action-menu mui-icon iconfont icon-jia mui-pull-right" href="#topPopover"></a>
+			<a href="search.html" class="mui-icon mui-icon-search mui-pull-right"></a>
+			<h1 class="mui-title">两点</h1>
+		</header>
+
+		<div class="mui-content">
+			<div>
+				<div id="segmentedControl" class="mui-segmented-control">
+					<a class="mui-control-item mui-active" href="#item1"><span>聊天</span></a>
+					<a class="mui-control-item" href="#item2">好友</a>
+				</div>
+			</div>
+			<div>
+				<div id="item1" class="mui-control-content mui-active">
+
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell mui-media">
+							<a href="single-chat.html">
+								<span class="tx-new"><img class="mui-media-object mui-pull-left" src="images/touxiang.jpg">
+<span class="mui-badge mui-badge-danger"></span></span>
+								<div class="mui-media-body">
+									张三<span class="mui-pull-right c-6 f13">12:14</span>
+									<p class="mui-ellipsis mt5">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+								</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<a href="single-chat.html">
+								<span class="tx-new"><img class="mui-media-object mui-pull-left" src="images/touxiang.jpg">
+<span class="mui-badge mui-badge-danger"></span></span>
+								<div class="mui-media-body">
+									张三<span class="mui-pull-right c-6 f13">12:14</span>
+									<p class="mui-ellipsis mt5">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+								</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<a href="single-chat.html">
+								<span class="tx-new"><img class="mui-media-object mui-pull-left" src="images/touxiang.jpg">
+</span>
+								<div class="mui-media-body">
+									张三<span class="mui-pull-right c-6 f13">12:14</span>
+									<p class="mui-ellipsis mt5">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+								</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<a href="javascript:;">
+								<span class="tx-new"><img class="mui-media-object mui-pull-left" src="images/touxiang.jpg">
+</span>
+								<div class="mui-media-body">
+									张三<span class="mui-pull-right c-6 f13">12:14</span>
+									<p class="mui-ellipsis mt5">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+								</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<a href="javascript:;">
+								<span class="tx-new"><img class="mui-media-object mui-pull-left" src="images/touxiang.jpg">
+</span>
+								<div class="mui-media-body">
+									张三<span class="mui-pull-right c-6 f13">12:14</span>
+									<p class="mui-ellipsis mt5">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+								</div>
+							</a>
+						</li>
+						<li class="mui-table-view-cell mui-media">
+							<a href="javascript:;">
+								<span class="tx-new"><img class="mui-media-object mui-pull-left" src="images/touxiang.jpg">
+</span>
+								<div class="mui-media-body">
+									张三<span class="mui-pull-right c-6 f13">12:14</span>
+									<p class="mui-ellipsis mt5">能和心爱的人一起睡觉，是件幸福的事情；可是，打呼噜怎么办？</p>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div id="item2" class="mui-control-content">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+							<a class="mui-navigate-right" href="message-new.html">新朋友</a>
+						</li>
+					</ul>
+					<ul class="mui-table-view mt15">
+						<li class="mui-table-view-cell mui-collapse">
+							<a class="mui-navigate-right" href="#">特别关心</a>
+							<div class="mui-collapse-content">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell mui-media">
+										<a href="javascript:;">
+											<span class="tx-new"><img class="mui-media-object mui-pull-left" src="images/touxiang.jpg">
+</span>
+											<div class="mui-media-body">
+												好有钱数据
+												<p class="mui-ellipsis mt5">张三</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="javascript:;">
+											<span class="tx-new"><img class="mui-media-object mui-pull-left" src="images/touxiang.jpg">
+</span>
+											<div class="mui-media-body">
+												好有钱数据
+												<p class="mui-ellipsis mt5">张三</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="javascript:;">
+											<span class="tx-new"><img class="mui-media-object mui-pull-left" src="images/touxiang.jpg">
+</span>
+											<div class="mui-media-body">
+												好有钱数据
+												<p class="mui-ellipsis mt5">张三</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="javascript:;">
+											<span class="tx-new"><img class="mui-media-object mui-pull-left" src="images/touxiang.jpg">
+</span>
+											<div class="mui-media-body">
+												好有钱数据
+												<p class="mui-ellipsis mt5">张三</p>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="mui-table-view-cell mui-collapse">
+							<a class="mui-navigate-right" href="#">第三方支付行业</a>
+							<div class="mui-collapse-content">
+								<ul class="mui-table-view">
+									<li class="mui-table-view-cell mui-media">
+										<a href="javascript:;">
+											<span class="tx-new"><img class="mui-media-object mui-pull-left" src="images/touxiang.jpg">
+</span>
+											<div class="mui-media-body">
+												好有钱数据
+												<p class="mui-ellipsis mt5">张三</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="javascript:;">
+											<span class="tx-new"><img class="mui-media-object mui-pull-left" src="images/touxiang.jpg">
+</span>
+											<div class="mui-media-body">
+												好有钱数据
+												<p class="mui-ellipsis mt5">张三</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="javascript:;">
+											<span class="tx-new"><img class="mui-media-object mui-pull-left" src="images/touxiang.jpg">
+</span>
+											<div class="mui-media-body">
+												好有钱数据
+												<p class="mui-ellipsis mt5">张三</p>
+											</div>
+										</a>
+									</li>
+									<li class="mui-table-view-cell mui-media">
+										<a href="javascript:;">
+											<span class="tx-new"><img class="mui-media-object mui-pull-left" src="images/touxiang.jpg">
+</span>
+											<div class="mui-media-body">
+												好有钱数据
+												<p class="mui-ellipsis mt5">张三</p>
+											</div>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" id="page_index" >
+				<span class="mui-icon iconfont icon-shouye1"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" id="page_message">
+				<span class="mui-icon iconfont icon-tongxunlu"></span>
+				<span class="mui-tab-label">通讯</span>
+			</a>
+			<a class="mui-tab-item" id="page_find">
+				<span class="mui-icon iconfont icon-zhaofuwushangxuanzhong"></span>
+				<span class="mui-tab-label">发现</span>
+			</a>
+			<a class="mui-tab-item" id="page_my">
+				<span class="mui-icon iconfont icon-wode-fuben_fuzhi"></span>
+				<span class="mui-tab-label">我的</span>
+			</a>
+		</nav>
+		<!--右上角弹出菜单-->
+		<div id="topPopover" class="mui-popover">
+			<div class="mui-popover-arrow"></div>
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+							<a href="#"><span class="mui-icon iconfont icon-icon"></span> 添加朋友</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a href="#"><span class="mui-icon iconfont icon-saoyisao"></span> 扫一扫</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a href="#"><span class="mui-icon iconfont icon-refresh"></span> 刷新需求</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+</body>
+</html>
+
+<script type="text/javascript">
+	        mui.init();
+	        mui("#page_index")[0].addEventListener('tap', function(event) {
+				mui.openWindow({
+					url: 'index.html',
+					id: 'page_index',
+					preload: true,
+					show: {
+						aniShow: 'pop-in'
+					},
+					styles: {
+						popGesture: 'hide'
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+			mui("#page_message")[0].addEventListener('tap', function(event) {
+				mui.openWindow({
+					url: 'message.html',
+					id: 'page_message',
+					preload: true,
+					show: {
+						aniShow: 'pop-in'
+					},
+					styles: {
+						popGesture: 'hide'
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+			mui("#page_find")[0].addEventListener('tap', function(event) {
+				mui.openWindow({
+					url: 'find.html',
+					id: 'page_find',
+					preload: true,
+					show: {
+						aniShow: 'pop-in'
+					},
+					styles: {
+						popGesture: 'hide'
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+			mui("#page_my")[0].addEventListener('tap', function(event) {
+				mui.openWindow({
+					url: 'my.html',
+					id: 'page_my',
+					preload: true,
+					show: {
+						aniShow: 'pop-in'
+					},
+					styles: {
+						popGesture: 'hide'
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+</script>

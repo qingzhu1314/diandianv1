@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/iconfont.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+		<link href="css/icons-extra.css" rel="stylesheet" />
+		<script type="text/javascript" charset="utf-8">
+		</script>
+		<style>
+			.mui-plus .plus {
+				display: inline;
+			}
+			
+			.plus {
+				display: none;
+			}
+			
+			#topPopover {
+				position: fixed;
+				top: 16px;
+				right: 6px;
+			}
+			
+			#topPopover .mui-popover-arrow {
+				left: auto;
+				right: 6px;
+			}
+			
+			p {
+				text-indent: 22px;
+			}
+			a{text-decoration: underline;}
+			.c-6{text-decoration: none;}
+			span.mui-icon {
+				font-size: 22px;
+			}
+			.mui-icon-arrowright{vertical-align: middle;}
+			.mui-popover {
+				height: 150px;
+				width: 150px;
+			}
+			
+			.mui-popover span.mui-icon {
+				margin-right: 10px;
+			}
+			
+			.mui-content {
+				padding: 44px 10px;
+			}
+			
+			.mui-bar-nav.mui-bar .mui-icon.mui-icon-search {
+				margin-right: 12px;
+			}
+			
+			.mui-title {
+				text-align: left;
+			}
+			
+			.mui-bar .mui-title {
+				left: 10px;
+			}
+			
+			.index-mk {
+				margin: 0 -10px 6px;
+				border-bottom: 1px solid #ddd;
+				padding: 6px;
+			}
+			
+			.mui-row {
+				padding: 8px 10px 8px;
+			}
+			.bg-gray{font-size: 16px ;}
+			.hy_div_list {
+				display: none;
+			}
+			.gz_div_list {
+				display: none;
+			}
+			.fw_div_list {
+				display: none;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<header class="mui-bar mui-bar-nav">
+			<a id="menu" class="mui-action-menu mui-icon iconfont icon-jia mui-pull-right" href="#topPopover"></a>
+			<a href="search.html" class="mui-icon mui-icon-search mui-pull-right"></a>
+			<h1 class="mui-title">两点</h1>
+		</header>
+
+		<div class="mui-content">
+			<div class="bg-f index-mk">
+				<div class="mui-row mui-text-center bg-primary">
+					<div class="mui-col-xs-4 mui-text-left">行业</div>
+					<div class="mui-col-xs-3">甲方</div>
+					<div class="mui-col-xs-2">更新</div>
+					<div class="mui-col-xs-2">乙方</div>
+					<div class="mui-col-xs-1 mui-text-right">
+						<a class="mui-icon iconfont icon-110 mui-badge mui-badge-warning mui-badge-inverted" href="index-edit.html"></a>
+					</div>
+				</div>
+				<div class="mui-row mui-text-center mt10">
+					<div class="mui-col-xs-4 c-6 mui-text-left"><a href="index-add-hy-1.html" class="c-6">第三方支付 </a></div>
+					<div class="mui-col-xs-3">
+						<a href="index-hy-list-jia.html">1268</a>
+					</div>
+					<div class="mui-col-xs-2"><span class="mui-badge mui-badge-inverted">0</span></div>
+					<div class="mui-col-xs-2">
+						<a href="index-hy-list-yi.html">18</a>
+					</div>
+					<div class="mui-col-xs-1"></div>
+				</div>
+				<div class="mui-row mui-text-center mt10">
+					<div class="mui-col-xs-4 c-6 mui-text-left">征信数据</div>
+					<div class="mui-col-xs-3">
+						<a href="index-hy-list-jia.html">1268</a>
+					</div>
+					<div class="mui-col-xs-2"><span class="mui-badge mui-badge-inverted">0</span></div>
+					<div class="mui-col-xs-2">
+						<a href="index-hy-list-yi.html">18</a>
+					</div>
+					<div class="mui-col-xs-1"></div>
+				</div>
+				<div class="mui-row mui-text-center mt10">
+					<div class="mui-col-xs-4 c-6 mui-text-left">便民缴费</div>
+					<div class="mui-col-xs-3">
+						<a href="index-hy-list-jia.html">1268</a>
+					</div>
+					<div class="mui-col-xs-2"><span class="mui-badge mui-badge-danger mui-badge-inverted">12</span></div>
+					<div class="mui-col-xs-2">
+						<a href="index-hy-list-yi.html">18</a>
+					</div>
+					<div class="mui-col-xs-1"></div>
+				</div>
+				<div class="mui-row mui-text-center mt10">
+					<div class="mui-col-xs-4 c-6 mui-text-left">软件外包</div>
+					<div class="mui-col-xs-3">
+						<a href="index-hy-list-jia.html">1268</a>
+					</div>
+					<div class="mui-col-xs-2"><span class="mui-badge mui-badge-inverted">0</span></div>
+					<div class="mui-col-xs-2">
+						<a href="index-hy-list-yi.html">18</a>
+					</div>
+					<div class="mui-col-xs-1"></div>
+				</div>
+				<div class="mui-row mui-text-center mt10 hy_div_list" >
+					<div class="mui-col-xs-4 c-6 mui-text-left">征信数据2</div>
+					<div class="mui-col-xs-3">
+						<a href="index-hy-list-jia.html">1268</a>
+					</div>
+					<div class="mui-col-xs-2"><span class="mui-badge mui-badge-inverted">0</span></div>
+					<div class="mui-col-xs-2">
+						<a href="index-hy-list-yi.html">18</a>
+					</div>
+					<div class="mui-col-xs-1"></div>
+				</div>
+				<div class="mui-row mui-text-center mt10 hy_div_list" >
+					<div class="mui-col-xs-4 c-6 mui-text-left">便民缴费2</div>
+					<div class="mui-col-xs-3">
+						<a href="index-hy-list-jia.html">1268</a>
+					</div>
+					<div class="mui-col-xs-2"><span class="mui-badge mui-badge-danger mui-badge-inverted">12</span></div>
+					<div class="mui-col-xs-2">
+						<a href="index-hy-list-yi.html">18</a>
+					</div>
+					<div class="mui-col-xs-1"></div>
+				</div>
+				<div class="mui-row mui-text-center mt10 hy_div_list">
+					<div class="mui-col-xs-4 c-6 mui-text-left">软件外包2</div>
+					<div class="mui-col-xs-3">
+						<a href="index-hy-list-jia.html">1268</a>
+					</div>
+					<div class="mui-col-xs-2"><span class="mui-badge mui-badge-inverted">0</span></div>
+					<div class="mui-col-xs-2">
+						<a href="index-hy-list-yi.html">18</a>
+					</div>
+					<div class="mui-col-xs-1"></div>
+				</div>
+				<div class="mui-text-center mt10 border-top-dashed" id="hy_div_more">
+					<a href="javascript:;" class="mui-block"><span class="mui-icon mui-icon-arrowdown" id="hy_div_more_span"></span></a>
+				</div>
+			</div>
+			<div class="bg-f index-mk">
+				<div class="mui-row mui-text-center bg-primary">
+					<div class="mui-col-xs-4 mui-text-left">服务</div>
+					<div class="mui-col-xs-3">甲方</div>
+					<div class="mui-col-xs-2">更新</div>
+					<div class="mui-col-xs-2">乙方</div>
+					<div class="mui-col-xs-1 mui-text-right">
+						<a class="mui-icon iconfont icon-110 mui-badge mui-badge-warning mui-badge-inverted" href="index-edit.html"></a>
+					</div>
+				</div>
+				<div class="mui-row mui-text-center mt10">
+					<div class="mui-col-xs-4 c-6 mui-text-left">身份认证</div>
+					<div class="mui-col-xs-3">
+						<a href="index-fw-list-jia.html">1268</a>
+					</div>
+					<div class="mui-col-xs-2"><span class="mui-badge mui-badge-inverted">0</span></div>
+					<div class="mui-col-xs-2">
+						<a href="index-fw-list-yi.html">18</a>
+					</div>
+					<div class="mui-col-xs-1"></div>
+				</div>
+				<div class="mui-row mui-text-center mt10">
+					<div class="mui-col-xs-4 c-6 mui-text-left">人像对比</div>
+					<div class="mui-col-xs-3">
+						<a href="index-fw-list-jia.html">1268</a>
+					</div>
+					<div class="mui-col-xs-2"><span class="mui-badge mui-badge-inverted">0</span></div>
+					<div class="mui-col-xs-2">
+						<a href="index-fw-list-yi.html">18</a>
+					</div>
+					<div class="mui-col-xs-1"></div>
+				</div>
+				<div class="mui-row mui-text-center mt10">
+					<div class="mui-col-xs-4 c-6 mui-text-left">短信通道</div>
+					<div class="mui-col-xs-3">
+						<a href="index-fw-list-jia.html">1268</a>
+					</div>
+					<div class="mui-col-xs-2"><span class="mui-badge mui-badge-danger mui-badge-inverted">12</span></div>
+					<div class="mui-col-xs-2">
+						<a href="index-fw-list-yi.html">18</a>
+					</div>
+					<div class="mui-col-xs-1"></div>
+				</div>
+				<div class="mui-row mui-text-center mt10">
+					<div class="mui-col-xs-4 c-6 mui-text-left">网关</div>
+					<div class="mui-col-xs-3">
+						<a href="index-fw-list-jia.html">1268</a>
+					</div>
+					<div class="mui-col-xs-2"><span class="mui-badge mui-badge-inverted">0</span></div>
+					<div class="mui-col-xs-2">
+						<a href="index-fw-list-yi.html">18</a>
+					</div>
+					<div class="mui-col-xs-1"></div>
+				</div>
+				<div class="mui-row mui-text-center mt10 fw_div_list">
+					<div class="mui-col-xs-4 c-6 mui-text-left">人像对比</div>
+					<div class="mui-col-xs-3">
+						<a href="index-fw-list-jia.html">1268</a>
+					</div>
+					<div class="mui-col-xs-2"><span class="mui-badge mui-badge-inverted">0</span></div>
+					<div class="mui-col-xs-2">
+						<a href="index-fw-list-yi.html">18</a>
+					</div>
+					<div class="mui-col-xs-1"></div>
+				</div>
+				<div class="mui-row mui-text-center mt10 fw_div_list">
+					<div class="mui-col-xs-4 c-6 mui-text-left">短信通道</div>
+					<div class="mui-col-xs-3">
+						<a href="index-fw-list-jia.html">1268</a>
+					</div>
+					<div class="mui-col-xs-2"><span class="mui-badge mui-badge-danger mui-badge-inverted">0</span></div>
+					<div class="mui-col-xs-2">
+						<a href="index-fw-list-yi.html">18</a>
+					</div>
+					<div class="mui-col-xs-1"></div>
+				</div>
+				<div class="mui-row mui-text-center mt10 fw_div_list">
+					<div class="mui-col-xs-4 c-6 mui-text-left">网关</div>
+					<div class="mui-col-xs-3">
+						<a href="index-fw-list-jia.html">1268</a>
+					</div>
+					<div class="mui-col-xs-2"><span class="mui-badge mui-badge-inverted">0</span></div>
+					<div class="mui-col-xs-2">
+						<a href="index-fw-list-yi.html">18</a>
+					</div>
+					<div class="mui-col-xs-1"></div>
+				</div>
+				<div class="mui-text-center mt10 border-top-dashed" id="fw_div_more">
+					<a href="javascript:;" class="mui-block"><span class="mui-icon mui-icon-arrowdown" id="fw_div_more_span"></span></a>
+				</div>
+			</div>
+			<div class="bg-f index-mk">
+				<div class="mui-row mui-text-center bg-primary">
+					<div class="mui-col-xs-4 mui-text-left">关注公司</div>
+					<div class="mui-col-xs-3">甲方</div>
+					<div class="mui-col-xs-2">更新</div>
+					<div class="mui-col-xs-2">乙方</div>
+					<div class="mui-col-xs-1 mui-text-right">
+						<a class="mui-icon iconfont icon-110 mui-badge mui-badge-warning mui-badge-inverted" href="index-edit.html"></a>
+					</div>
+				</div>
+				<div class="mui-row mui-text-center mt10">
+					<div class="mui-col-xs-4 c-6 mui-text-left"><a href="company-1.html" class="c-6">xx支付</a></div>
+					<div class="mui-col-xs-3">
+						<a href="">1268</a>
+					</div>
+					<div class="mui-col-xs-2"><span class="mui-badge mui-badge-inverted">0</span></div>
+					<div class="mui-col-xs-2">
+						<a href="">18</a>
+					</div>
+					<div class="mui-col-xs-1"></div>
+				</div>
+				<div class="mui-row mui-text-center mt10">
+					<div class="mui-col-xs-4 c-6 mui-text-left"><a href="company-1.html" class="c-6">xx征信</a></div>
+					<div class="mui-col-xs-3">
+						<a href="">1268</a>
+					</div>
+					<div class="mui-col-xs-2"><span class="mui-badge mui-badge-inverted">0</span></div>
+					<div class="mui-col-xs-2">
+						<a href="">18</a>
+					</div>
+					<div class="mui-col-xs-1"></div>
+				</div>
+				<div class="mui-row mui-text-center mt10">
+					<div class="mui-col-xs-4 c-6 mui-text-left"><a href="company-1.html" class="c-6">第三方支付</a></div>
+					<div class="mui-col-xs-3">
+						<a href="">1268</a>
+					</div>
+					<div class="mui-col-xs-2"><span class="mui-badge mui-badge-danger mui-badge-inverted">12</span></div>
+					<div class="mui-col-xs-2">
+						<a href="">18</a>
+					</div>
+					<div class="mui-col-xs-1"></div>
+				</div>
+				<div class="mui-row mui-text-center mt10">
+					<div class="mui-col-xs-4 c-6 mui-text-left"><a href="company-1.html" class="c-6">第三方支付2</a></div>
+					<div class="mui-col-xs-3">
+						<a href="">1268</a>
+					</div>
+					<div class="mui-col-xs-2"><span class="mui-badge mui-badge-inverted">0</span></div>
+					<div class="mui-col-xs-2">
+						<a href="">18</a>
+					</div>
+					<div class="mui-col-xs-1"></div>
+				</div>
+				
+				<div class="mui-row mui-text-center mt10 gz_div_list">
+					<div class="mui-col-xs-4 c-6 mui-text-left"><a href="company-1.html" class="c-6">xx征信2</a></div>
+					<div class="mui-col-xs-3">
+						<a href="">1268</a>
+					</div>
+					<div class="mui-col-xs-2"><span class="mui-badge mui-badge-inverted">0</span></div>
+					<div class="mui-col-xs-2">
+						<a href="">18</a>
+					</div>
+					<div class="mui-col-xs-1"></div>
+				</div>
+				<div class="mui-row mui-text-center mt10 gz_div_list">
+					<div class="mui-col-xs-4 c-6 mui-text-left"><a href="company-1.html" class="c-6">第三方支付2</a></div>
+					<div class="mui-col-xs-3">
+						<a href="">1268</a>
+					</div>
+					<div class="mui-col-xs-2"><span class="mui-badge mui-badge-danger mui-badge-inverted">12</span></div>
+					<div class="mui-col-xs-2">
+						<a href="">18</a>
+					</div>
+					<div class="mui-col-xs-1"></div>
+				</div>
+				<div class="mui-row mui-text-center mt10 gz_div_list">
+					<div class="mui-col-xs-4 c-6 mui-text-left"><a href="company-1.html" class="c-6">第三方支付22</a></div>
+					<div class="mui-col-xs-3">
+						<a href="">1268</a>
+					</div>
+					<div class="mui-col-xs-2"><span class="mui-badge mui-badge-inverted">0</span></div>
+					<div class="mui-col-xs-2">
+						<a href="">18</a>
+					</div>
+					<div class="mui-col-xs-1"></div>
+				</div>
+				<div class="mui-text-center mt10 border-top-dashed" id="gz_div_more">
+					<a href="javascript:;" class="mui-block"><span class="mui-icon mui-icon-arrowdown" id="gz_div_more_span"></span></a>
+				</div>
+			</div>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" id="page_index" >
+				<span class="mui-icon iconfont icon-shouye1"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" id="page_message">
+				<span class="mui-icon iconfont icon-tongxunlu"></span>
+				<span class="mui-tab-label">通讯</span>
+			</a>
+			<a class="mui-tab-item" id="page_find">
+				<span class="mui-icon iconfont icon-zhaofuwushangxuanzhong"></span>
+				<span class="mui-tab-label">发现</span>
+			</a>
+			<a class="mui-tab-item" id="page_my">
+				<span class="mui-icon iconfont icon-wode-fuben_fuzhi"></span>
+				<span class="mui-tab-label">我的</span>
+			</a>
+		</nav>
+		<!--右上角弹出菜单-->
+		<div id="topPopover" class="mui-popover">
+			<div class="mui-popover-arrow"></div>
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+							<a href="search.html"><span class="mui-icon iconfont icon-icon"></span> 添加朋友</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a href="#"><span class="mui-icon iconfont icon-saoyisao"></span> 扫一扫</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a href="#"><span class="mui-icon iconfont icon-refresh"></span> 刷新需求</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+<script src="js/jquery.js"></script>
+<script type="text/javascript">
+	        mui.init();
+	        mui("#page_index")[0].addEventListener('tap', function(event) {
+				mui.openWindow({
+					url: 'index.html',
+					id: 'page_index',
+					preload: true,
+					show: {
+						aniShow: 'pop-in'
+					},
+					styles: {
+						popGesture: 'hide'
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+			mui("#page_message")[0].addEventListener('tap', function(event) {
+				mui.openWindow({
+					url: 'message.html',
+					id: 'page_message',
+					preload: true,
+					show: {
+						aniShow: 'pop-in'
+					},
+					styles: {
+						popGesture: 'hide'
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+			mui("#page_find")[0].addEventListener('tap', function(event) {
+				mui.openWindow({
+					url: 'find.html',
+					id: 'page_find',
+					preload: true,
+					show: {
+						aniShow: 'pop-in'
+					},
+					styles: {
+						popGesture: 'hide'
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+			mui("#page_my")[0].addEventListener('tap', function(event) {
+				mui.openWindow({
+					url: 'my.html',
+					id: 'page_my',
+					preload: true,
+					show: {
+						aniShow: 'pop-in'
+					},
+					styles: {
+						popGesture: 'hide'
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+			var flag = 0;
+			mui("#hy_div_more")[0].addEventListener('click', function(event) {
+				if(flag == 0){
+					flag = 1;
+					$("#hy_div_more_span").removeClass("mui-icon-arrowdown");
+					$("#hy_div_more_span").addClass("mui-icon-arrowup");
+					$(".hy_div_list").slideDown();
+				}else{
+					flag = 0;
+					$("#hy_div_more_span").addClass("mui-icon-arrowdown");
+					$("#hy_div_more_span").removeClass("mui-icon-arrowup");
+					$(".hy_div_list").slideUp();
+				}
+			});
+			var flag2 = 0;
+			mui("#fw_div_more")[0].addEventListener('click', function(event) {
+				if(flag2 == 0){
+					flag2 = 1;
+					$("#fw_div_more_span").removeClass("mui-icon-arrowdown");
+					$("#fw_div_more_span").addClass("mui-icon-arrowup");
+					$(".fw_div_list").slideDown();
+				}else{
+					flag2 = 0;
+					$("#fw_div_more_span").addClass("mui-icon-arrowdown");
+					$("#fw_div_more_span").removeClass("mui-icon-arrowup");
+					$(".fw_div_list").slideUp();
+				}
+			});
+			var flag3 = 0;
+			mui("#gz_div_more")[0].addEventListener('click', function(event) {
+				if(flag3 == 0){
+					flag3 = 1;
+					$("#gz_div_more_span").removeClass("mui-icon-arrowdown");
+					$("#gz_div_more_span").addClass("mui-icon-arrowup");
+					$(".gz_div_list").slideDown();
+				}else{
+					flag3 = 0;
+					$("#gz_div_more_span").addClass("mui-icon-arrowdown");
+					$("#gz_div_more_span").removeClass("mui-icon-arrowup");
+					$(".gz_div_list").slideUp();
+				}
+			});
+</script>

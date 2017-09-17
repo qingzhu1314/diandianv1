@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/iconfont.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+		<link href="css/icons-extra.css" rel="stylesheet" />
+		<script type="text/javascript" charset="utf-8">
+		</script>
+		<style>
+			.mui-plus .plus {
+				display: inline;
+			}
+			
+			.plus {
+				display: none;
+			}
+			
+			#topPopover {
+				position: fixed;
+				top: 16px;
+				right: 6px;
+			}
+			
+			#topPopover .mui-popover-arrow {
+				left: auto;
+				right: 6px;
+			}
+			
+			.mui-popover {
+				height: 150px;
+				width: 150px;
+			}
+			
+			.mui-popover span.mui-icon {
+				margin-right: 10px;
+			}
+			
+			.mui-content {
+				padding: 44px 0px;
+			}
+			
+			.mui-bar-nav.mui-bar .mui-icon.mui-icon-search {
+				margin-right: 12px;
+			}
+			
+			.index-mk {
+				margin: 0px 0px 0px;
+				padding: 8px 10px 8px;
+			}
+			
+			.mui-table-view-cell:after {
+				left: 0;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-icon mui-icon-left-nav mui-pull-left" onclick="window.history.go(-1);"></a>
+			<h1 class="mui-title">身份认证需求</h1>
+		</header>
+
+		<div class="mui-content">
+			<div class="index-mk bg-warning">
+				<div class="mui-row mui-text-center f13">
+					<div class="mui-col-xs-3 mui-text-left">公司</div>
+					<div class="mui-col-xs-3">需求数</div>
+					<div class="mui-col-xs-6">好友与人脉</div>
+				</div>
+
+			</div>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<div class="mui-row mui-text-center mt10 f13">
+						<div class="mui-col-xs-4 c-6 mui-text-left">
+							<a href="">xxx公司</a>
+						</div>
+						<div class="mui-col-xs-2 mui-text-left">3</div>
+						<div class="mui-col-xs-6">
+							<a href="find-kehu.html"><img src="images/touxiang.jpg" class="tximg"><img src="images/touxiang.jpg" class="tximg"><img src="images/touxiang.jpg" class="tximg"><img src="images/touxiang.jpg" class="tximg"> 1268</a>
+						</div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="mui-row mui-text-center mt10 f13">
+						<div class="mui-col-xs-4 c-6 mui-text-left">
+							<a href="">xxx公司</a>
+						</div>
+						<div class="mui-col-xs-2 mui-text-left">3</div>
+						<div class="mui-col-xs-6">
+							<a href="find-kehu.html"><img src="images/touxiang.jpg" class="tximg"><img src="images/touxiang.jpg" class="tximg"><img src="images/touxiang.jpg" class="tximg"><img src="images/touxiang.jpg" class="tximg"> 1268</a>
+						</div>
+					</div>
+				</li>
+				<li class="mui-table-view-cell">
+					<div class="mui-row mui-text-center mt10 f13">
+						<div class="mui-col-xs-4 c-6 mui-text-left">
+							<a href="">xxx公司</a>
+						</div>
+						<div class="mui-col-xs-2 mui-text-left">3</div>
+						<div class="mui-col-xs-6">
+							<a href="find-kehu.html"><img src="images/touxiang.jpg" class="tximg"><img src="images/touxiang.jpg" class="tximg"><img src="images/touxiang.jpg" class="tximg"><img src="images/touxiang.jpg" class="tximg"> 1268</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" id="page_index" >
+				<span class="mui-icon iconfont icon-shouye1"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" id="page_message">
+				<span class="mui-icon iconfont icon-tongxunlu"></span>
+				<span class="mui-tab-label">通讯</span>
+			</a>
+			<a class="mui-tab-item" id="page_find">
+				<span class="mui-icon iconfont icon-zhaofuwushangxuanzhong"></span>
+				<span class="mui-tab-label">发现</span>
+			</a>
+			<a class="mui-tab-item" id="page_my">
+				<span class="mui-icon iconfont icon-wode-fuben_fuzhi"></span>
+				<span class="mui-tab-label">我的</span>
+			</a>
+		</nav>
+</body>
+</html>
+<script type="text/javascript">
+	        mui.init();
+	        mui("#page_index")[0].addEventListener('tap', function(event) {
+				mui.openWindow({
+					url: 'index.html',
+					id: 'page_index',
+					preload: true,
+					show: {
+						aniShow: 'pop-in'
+					},
+					styles: {
+						popGesture: 'hide'
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+			mui("#page_message")[0].addEventListener('tap', function(event) {
+				mui.openWindow({
+					url: 'message.html',
+					id: 'page_message',
+					preload: true,
+					show: {
+						aniShow: 'pop-in'
+					},
+					styles: {
+						popGesture: 'hide'
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+			mui("#page_find")[0].addEventListener('tap', function(event) {
+				mui.openWindow({
+					url: 'find.html',
+					id: 'page_find',
+					preload: true,
+					show: {
+						aniShow: 'pop-in'
+					},
+					styles: {
+						popGesture: 'hide'
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+			mui("#page_my")[0].addEventListener('tap', function(event) {
+				mui.openWindow({
+					url: 'my.html',
+					id: 'page_my',
+					preload: true,
+					show: {
+						aniShow: 'pop-in'
+					},
+					styles: {
+						popGesture: 'hide'
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+</script>

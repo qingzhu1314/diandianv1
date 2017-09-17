@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/iconfont.css" rel="stylesheet" />
+		<link href="css/mui.picker.css" rel="stylesheet" />
+		<link href="css/mui.poppicker.css" rel="stylesheet" />
+		<link rel="stylesheet" type="text/css" href="css/mui.picker.min.css" />
+		<link href="css/style.css" rel="stylesheet" />
+		<link href="css/icons-extra.css" rel="stylesheet" />
+		<script type="text/javascript" charset="utf-8">
+		</script>
+		<style>
+			.mui-plus .plus {
+				display: inline;
+			}
+			
+			.plus {
+				display: none;
+			}
+			
+			#topPopover {
+				position: fixed;
+				top: 16px;
+				right: 6px;
+			}
+			
+			#topPopover .mui-popover-arrow {
+				left: auto;
+				right: 6px;
+			}
+			
+			span.mui-icon {
+				font-size: 18px;
+			}
+			
+			p {
+				margin-bottom: 5px;
+			}
+			
+			.mui-popover {
+				height: 150px;
+				width: 150px;
+			}
+			
+			.mui-popover span.mui-icon {
+				margin-right: 10px;
+			}
+			
+			.mui-content {
+				padding: 44px 0px;
+			}
+			
+			.mui-bar-nav.mui-bar .mui-icon.mui-icon-search {
+				margin-right: 12px;
+			}
+			
+			.icon-bg {
+				margin-right: 5px;
+			}
+			
+			.icon-youxiangrenzheng {
+				vertical-align: middle;
+			}
+			
+			.mui-table-view-cell.mui-collapse .mui-table-view {
+				margin-top: 0;
+			}
+			
+			.mui-table-view-cell.mui-collapse .mui-collapse-content {
+				padding: 0 15px 8px;
+			}
+			
+			h4 {
+				font-size: 16px;
+			}
+			
+			.mui-bar-nav.mui-bar .mui-icon.mui-text {
+				font-size: 16px;
+				padding-top: 15px;
+			}
+			
+			h5.mui-content-padded {
+				margin-left: 3px;
+				margin-top: 20px !important;
+			}
+			
+			h5.mui-content-padded:first-child {
+				margin-top: 12px !important;
+			}
+			
+			.mui-btn {
+				font-size: 16px;
+				padding: 8px;
+				margin: 3px;
+			}
+			
+			* {
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-icon mui-icon-left-nav mui-pull-left" onclick="window.history.go(-1);"></a>
+			<a class="mui-pull-right mui-icon mui-text">保存</a>
+			<h1 class="mui-title">基本信息</h1>
+		</header>
+
+		<div class="mui-content">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						<span class="mui-badge mui-badge-inverted">张三</span> 姓名
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						<span class="mui-badge mui-badge-inverted">女</span> 性别
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" id='showUserPicker'>
+						<span class="mui-badge mui-badge-inverted"><div id='userResult' class="ui-alert"></div></span> 最高学历
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a id='demo6' data-options='{"type":"month"}' class="btn mui-navigate-right">
+						<span class="mui-badge mui-badge-inverted"><div id='result' class="ui-alert"></div></span> 出生年月
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" id='showCityPicker'>
+						<span class="mui-badge mui-badge-inverted"><div id='cityResult' class="ui-alert"></div></span> 所在城市
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						<span class="mui-badge mui-badge-inverted">123456789</span> 电话
+					</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">
+						<span class="mui-badge mui-badge-inverted">123@qq.com</span> 邮箱
+					</a>
+				</li>
+			</ul>
+
+			<div class="mt10 px12">
+				<a href="" class="mui-btn mui-btn-warning mui-btn-block">保存</a>
+			</div>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" id="page_index" >
+				<span class="mui-icon iconfont icon-shouye1"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" id="page_message">
+				<span class="mui-icon iconfont icon-tongxunlu"></span>
+				<span class="mui-tab-label">通讯</span>
+			</a>
+			<a class="mui-tab-item" id="page_find">
+				<span class="mui-icon iconfont icon-zhaofuwushangxuanzhong"></span>
+				<span class="mui-tab-label">发现</span>
+			</a>
+			<a class="mui-tab-item" id="page_my">
+				<span class="mui-icon iconfont icon-wode-fuben_fuzhi"></span>
+				<span class="mui-tab-label">我的</span>
+			</a>
+		</nav>
+		<script src="js/mui.min.js"></script>
+		<script src="js/mui.picker.js"></script>
+		<script src="js/mui.poppicker.js"></script>
+		<script src="js/mui.picker.min.js"></script>
+		<script src="js/city.data.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/city.data-3.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			(function($) {
+				$.init();
+				var result = $('#result')[0];
+				var btns = $('.btn');
+				btns.each(function(i, btn) {
+					btn.addEventListener('tap', function() {
+						var optionsJson = this.getAttribute('data-options') || '{}';
+						var options = JSON.parse(optionsJson);
+						var id = this.getAttribute('id');
+						/*
+						 * 首次显示时实例化组件
+						 * 示例为了简洁，将 options 放在了按钮的 dom 上
+						 * 也可以直接通过代码声明 optinos 用于实例化 DtPicker
+						 */
+						var picker = new $.DtPicker(options);
+						picker.show(function(rs) {
+							/*
+							 * rs.value 拼合后的 value
+							 * rs.text 拼合后的 text
+							 * rs.y 年，可以通过 rs.y.vaue 和 rs.y.text 获取值和文本
+							 * rs.m 月，用法同年
+							 * rs.d 日，用法同年
+							 * rs.h 时，用法同年
+							 * rs.i 分（minutes 的第二个字母），用法同年
+							 */
+							result.innerText = rs.text;
+							/* 
+							 * 返回 false 可以阻止选择框的关闭
+							 * return false;
+							 */
+							/*
+							 * 释放组件资源，释放后将将不能再操作组件
+							 * 通常情况下，不需要示放组件，new DtPicker(options) 后，可以一直使用。
+							 * 当前示例，因为内容较多，如不进行资原释放，在某些设备上会较慢。
+							 * 所以每次用完便立即调用 dispose 进行释放，下次用时再创建新实例。
+							 */
+							picker.dispose();
+						});
+					}, false);
+				});
+			})(mui);
+		</script>
+		<script>
+			(function($, doc) {
+				$.init();
+				$.ready(function() {
+					/**
+					 * 获取对象属性的值
+					 * 主要用于过滤三级联动中，可能出现的最低级的数据不存在的情况，实际开发中需要注意这一点；
+					 * @param {Object} obj 对象
+					 * @param {String} param 属性名
+					 */
+					var _getParam = function(obj, param) {
+						return obj[param] || '';
+					};
+					//普通示例
+					var userPicker = new $.PopPicker();
+					userPicker.setData([{
+						value: 'ywj',
+						text: '董事长 叶文洁'
+					}, {
+						value: 'aaa',
+						text: '总经理 艾AA'
+					}, {
+						value: 'lj',
+						text: '罗辑'
+					}, {
+						value: 'ymt',
+						text: '云天明'
+					}, {
+						value: 'shq',
+						text: '史强'
+					}, {
+						value: 'zhbh',
+						text: '章北海'
+					}, {
+						value: 'zhy',
+						text: '庄颜'
+					}, {
+						value: 'gyf',
+						text: '关一帆'
+					}, {
+						value: 'zhz',
+						text: '智子'
+					}, {
+						value: 'gezh',
+						text: '歌者'
+					}]);
+					var showUserPickerButton = doc.getElementById('showUserPicker');
+					var userResult = doc.getElementById('userResult');
+					showUserPickerButton.addEventListener('tap', function(event) {
+						userPicker.show(function(items) {
+							userResult.innerText = items[0].text;
+							//返回 false 可以阻止选择框的关闭
+							//return false;
+						});
+					}, false);
+					//-----------------------------------------
+					//级联示例
+					var cityPicker = new $.PopPicker({
+						layer: 2
+					});
+					cityPicker.setData(cityData);
+					var showCityPickerButton = doc.getElementById('showCityPicker');
+					var cityResult = doc.getElementById('cityResult');
+					showCityPickerButton.addEventListener('tap', function(event) {
+						cityPicker.show(function(items) {
+							cityResult.innerText = items[0].text + " " + items[1].text;
+							//返回 false 可以阻止选择框的关闭
+							//return false;
+						});
+					}, false);
+				});
+			})(mui, document);
+		</script>
+</body>
+</html>
+<script type="text/javascript">
+	        mui.init();
+	        mui("#page_index")[0].addEventListener('tap', function(event) {
+				mui.openWindow({
+					url: 'index.html',
+					id: 'page_index',
+					preload: true,
+					show: {
+						aniShow: 'pop-in'
+					},
+					styles: {
+						popGesture: 'hide'
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+			mui("#page_message")[0].addEventListener('tap', function(event) {
+				mui.openWindow({
+					url: 'message.html',
+					id: 'page_message',
+					preload: true,
+					show: {
+						aniShow: 'pop-in'
+					},
+					styles: {
+						popGesture: 'hide'
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+			mui("#page_find")[0].addEventListener('tap', function(event) {
+				mui.openWindow({
+					url: 'find.html',
+					id: 'page_find',
+					preload: true,
+					show: {
+						aniShow: 'pop-in'
+					},
+					styles: {
+						popGesture: 'hide'
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+			mui("#page_my")[0].addEventListener('tap', function(event) {
+				mui.openWindow({
+					url: 'my.html',
+					id: 'page_my',
+					preload: true,
+					show: {
+						aniShow: 'pop-in'
+					},
+					styles: {
+						popGesture: 'hide'
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+</script>

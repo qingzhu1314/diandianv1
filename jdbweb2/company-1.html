@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/iconfont.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+		<link href="css/icons-extra.css" rel="stylesheet" />
+		<script type="text/javascript" charset="utf-8">
+		</script>
+		<style>
+			.mui-plus .plus {
+				display: inline;
+			}
+			
+			.plus {
+				display: none;
+			}
+			
+			#topPopover {
+				position: fixed;
+				top: 16px;
+				right: 6px;
+			}
+			
+			#topPopover .mui-popover-arrow {
+				left: auto;
+				right: 6px;
+			}
+			
+			span.mui-icon {
+				font-size: 22px;
+				vertical-align: text-bottom;
+			}
+			
+			.mui-popover {
+				height: 150px;
+				width: 150px;
+			}
+			
+			.mui-popover span.mui-icon {
+				margin-right: 10px;
+			}
+			
+			.mui-content {
+				padding: 44px 0px;
+			}
+			
+			.mui-bar-nav.mui-bar .mui-icon.mui-icon-search {
+				margin-right: 12px;
+			}
+			
+			.mui-bar .mui-title {
+				left: 10px;
+			}
+			
+			.index-mk {
+				margin: 0 0 6px;
+				border-bottom: 1px solid #ddd;
+				padding: 6px 0;
+			}
+			
+			.mui-row {
+				padding: 4px 10px 4px;
+			}
+			
+			.mui-segmented-control {
+				background: #fff;
+				margin-bottom: 0px;
+				border: none;
+				border-bottom: 1px solid #ddd;
+			}
+			
+			.mui-segmented-control .mui-control-item {
+				border: none;
+				line-height: 24px;
+				padding: 7px 0;
+			}
+			
+			.mui-segmented-control .mui-control-item span {
+				display: block;
+				border-right: 1px solid #ddd;
+			}
+			
+			.mui-segmented-control .mui-control-item.mui-active {
+				background: #fff;
+				color: #0f88eb;
+				border-bottom: 2px solid #0f88eb;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-icon mui-icon-left-nav mui-pull-left" onclick="window.history.go(-1);"></a>
+			<h1 class="mui-title">xxxx公司</h1>
+		</header>
+
+		<div class="mui-content">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-media">
+					<img class="mui-media-object mui-pull-left" src="images/touxiang.jpg">
+					<div class="mui-media-body">
+						第三方支付
+						<p class="mui-ellipsis mt5">上海XXXX有限公司</p>
+					</div>
+					<div class="mt20">
+						<p>上海市浦东新区XX路XX弄XX楼XX室</p>
+						<p>传真：021-12313221 </p>
+						<p>电话：021-3345435 </p>
+						<p>business@xxxx.com www.xxxx.com</p>
+					</div>
+				</li>
+			</ul>
+			<div>
+				<div id="segmentedControl" class="mui-segmented-control">
+					<a class="mui-control-item mui-active" href="#item1"><span>业务需求</span></a>
+					<a class="mui-control-item" href="#item2"><span>业务服务</span></a>
+					<a class="mui-control-item" href="#item3">企业征信</a>
+				</div>
+			</div>
+			<div>
+				<div id="item1" class="mui-control-content mui-active">
+					<div class="mui-scroll">
+						<div class="index-mk px12 bg-f">
+							<div class="mui-row mui-text-center bg-warning">
+								<div class="mui-col-xs-6 mui-text-left">业务需求</div>
+								<div class="mui-col-xs-6 mui-text-left">好友</div>
+							</div>
+							<div class="mui-row mui-text-center mt10 f13">
+								<div class="mui-col-xs-6 c-6 mui-text-left">第三方支付</div>
+								<div class="mui-col-xs-6 mui-text-left"><img src="images/touxiang.jpg" class="tximg"><img src="images/touxiang.jpg" class="tximg"><span class="mui-icon iconfont icon-zengjia1 mui-badge-primary mui-badge-inverted"></span></div>
+
+							</div>
+							<div class="mui-row mui-text-center mt10 f13">
+								<div class="mui-col-xs-6 c-6 mui-text-left">第三方支付</div>
+								<div class="mui-col-xs-6 mui-text-left"><img src="images/touxiang.jpg" class="tximg"><span class="mui-icon iconfont icon-zengjia1 mui-badge-primary mui-badge-inverted"></span></div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="item2" class="mui-control-content">
+					<div class="index-mk px12 bg-f">
+						<div class="mui-row mui-text-center bg-warning">
+							<div class="mui-col-xs-6 mui-text-left">业务服务</div>
+							<div class="mui-col-xs-6 mui-text-left">负责BD</div>
+						</div>
+						<div class="mui-row mui-text-center mt10 f13">
+							<div class="mui-col-xs-6 c-6 mui-text-left">网银</div>
+							<div class="mui-col-xs-6 mui-text-left"><img src="images/touxiang.jpg" class="tximg"><img src="images/touxiang.jpg" class="tximg"><span class="mui-icon iconfont icon-zengjia1 mui-badge-primary mui-badge-inverted"></span></div>
+
+						</div>
+						<div class="mui-row mui-text-center mt10 f13">
+							<div class="mui-col-xs-6 c-6 mui-text-left">代收付</div>
+							<div class="mui-col-xs-6 mui-text-left"><img src="images/touxiang.jpg" class="tximg"><span class="mui-icon iconfont icon-zengjia1 mui-badge-primary mui-badge-inverted"></span></div>
+
+						</div>
+					</div>
+				</div>
+				<div id="item3" class="mui-control-content">
+					<div class="bg-f px12 py20">
+						<p class="c-3">工商基本信息</p>
+						<p>更多工商信息，数据来源：XX公司</p>
+						<p class="c-3">付费征信报告：</p>
+						<p>上海XX企业征信公司 60元 当月售出1234份</p>
+						<p>北京XX企业征信公司 80元 当月售出3份</p>
+						<p>XXX企业征信公司 100元 当月售出0份</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" id="page_index" >
+				<span class="mui-icon iconfont icon-shouye1"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" id="page_message">
+				<span class="mui-icon iconfont icon-tongxunlu"></span>
+				<span class="mui-tab-label">通讯</span>
+			</a>
+			<a class="mui-tab-item" id="page_find">
+				<span class="mui-icon iconfont icon-zhaofuwushangxuanzhong"></span>
+				<span class="mui-tab-label">发现</span>
+			</a>
+			<a class="mui-tab-item" id="page_my">
+				<span class="mui-icon iconfont icon-wode-fuben_fuzhi"></span>
+				<span class="mui-tab-label">我的</span>
+			</a>
+		</nav>
+</body>
+</html>
+<script type="text/javascript"><script type="text/javascript">
+	        mui.init();
+	        mui("#page_index")[0].addEventListener('tap', function(event) {
+				mui.openWindow({
+					url: 'index.html',
+					id: 'page_index',
+					preload: true,
+					show: {
+						aniShow: 'pop-in'
+					},
+					styles: {
+						popGesture: 'hide'
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+			mui("#page_message")[0].addEventListener('tap', function(event) {
+				mui.openWindow({
+					url: 'message.html',
+					id: 'page_message',
+					preload: true,
+					show: {
+						aniShow: 'pop-in'
+					},
+					styles: {
+						popGesture: 'hide'
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+			mui("#page_find")[0].addEventListener('tap', function(event) {
+				mui.openWindow({
+					url: 'find.html',
+					id: 'page_find',
+					preload: true,
+					show: {
+						aniShow: 'pop-in'
+					},
+					styles: {
+						popGesture: 'hide'
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+			mui("#page_my")[0].addEventListener('tap', function(event) {
+				mui.openWindow({
+					url: 'my.html',
+					id: 'page_my',
+					preload: true,
+					show: {
+						aniShow: 'pop-in'
+					},
+					styles: {
+						popGesture: 'hide'
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+</script>

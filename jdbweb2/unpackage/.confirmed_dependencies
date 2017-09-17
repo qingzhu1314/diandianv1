@@ -1,0 +1,84 @@
+{
+  "login.html": {
+    "resources": [
+      "js/app.js",
+      "js/mui.min.js",
+      "images/sinaweibo.png",
+      "css/mui.min.css",
+      "css/style.css",
+      "images/weixin.png",
+      "images/qq.png",
+      "js/mui.enterfocus.js"
+    ],
+    "refer": [
+      "forget_password.html",
+      "reg.html",
+      "index.html"
+    ]
+  },
+  "forget_password.html": {
+    "resources": [
+      "css/mui.min.css",
+      "css/style.css",
+      "forget_password.html"
+    ],
+    "refer": [
+      "forget_password.html"
+    ]
+  },
+  "reg.html": {
+    "resources": [
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "css/style.css",
+      "login.html",
+      "js/app.js",
+      "js/mui.min.js"
+    ],
+    "refer": [
+      "login.html"
+    ]
+  },
+  "index.html": {
+    "resources": [
+      "js/mui.min.js",
+      "fonts/mui.ttf",
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "css/style.css",
+      "css/icons-extra.css",
+      "fonts/iconfont.woff",
+      "index-edit.html"
+    ],
+    "refer": [
+      "index-edit.html"
+    ]
+  },
+  "index-edit.html": {
+    "resources": [
+      "css/iconfont.css",
+      "css/mui.min.css",
+      "css/icons-extra.css",
+      "index.html",
+      "index-add-hy.html"
+    ],
+    "refer": [
+      "index.html",
+      "index-add-hy.html"
+    ]
+  },
+  "index-add-hy.html": {
+    "resources": [
+      "index-add-hy-1.html",
+      "css/mui.min.css"
+    ],
+    "refer": [
+      "index-add-hy-1.html"
+    ]
+  },
+  "index-add-hy-1.html": {
+    "resources": [
+      "css/mui.min.css"
+    ]
+  }
+}

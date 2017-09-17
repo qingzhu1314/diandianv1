@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/iconfont.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+		<link href="css/icons-extra.css" rel="stylesheet" />
+		<script type="text/javascript" charset="utf-8">
+		</script>
+		<style>
+			.mui-plus .plus {
+				display: inline;
+			}
+			
+			.plus {
+				display: none;
+			}
+			
+			#topPopover {
+				position: fixed;
+				top: 16px;
+				right: 6px;
+			}
+			
+			#topPopover .mui-popover-arrow {
+				left: auto;
+				right: 6px;
+			}
+			
+			p {
+				text-indent: 22px;
+			}
+			
+			span.mui-icon {
+				font-size: 22px;
+			}
+			
+			.mui-popover {
+				height: 150px;
+				width: 150px;
+			}
+			
+			.mui-popover span.mui-icon {
+				margin-right: 10px;
+			}
+			
+			.mui-content {
+				padding: 44px 0px;
+			}
+			
+			.mui-bar-nav.mui-bar .mui-icon.mui-icon-search {
+				margin-right: 12px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-icon mui-icon-left-nav mui-pull-left" onclick="window.history.go(-1);"></a>
+			<h1 class="mui-title">编辑</h1>
+		</header>
+
+		<div class="mui-content">
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell mui-collapse">
+					<a class="mui-navigate-right" href="#">第三方支付</a>
+					<div class="mui-collapse-content">
+						<form class="mui-input-group">
+							<div class="mui-input-row mui-checkbox mui-left">
+								<label>网银</label>
+								<input name="checkbox" value="Item 1" type="checkbox">
+							</div>
+							<div class="mui-input-row mui-checkbox mui-left">
+								<label>代收</label>
+								<input name="checkbox" value="Item 2" type="checkbox" checked="">
+							</div>
+							<div class="mui-input-row mui-checkbox mui-left">
+								<label>代付</label>
+								<input name="checkbox" value="Item 2" type="checkbox" checked="">
+							</div>
+							<div class="mui-input-row mui-checkbox mui-left">
+								<label>快捷</label>
+								<input name="checkbox" value="Item 1" type="checkbox">
+							</div>
+						</form>
+					</div>
+				</li>
+				<li class="mui-table-view-cell mui-collapse">
+					<a class="mui-navigate-right" href="#">征信数据</a>
+					<div class="mui-collapse-content">
+						<form class="mui-input-group">
+							<div class="mui-input-row mui-checkbox mui-left">
+								<label>网银</label>
+								<input name="checkbox" value="Item 1" type="checkbox">
+							</div>
+							<div class="mui-input-row mui-checkbox mui-left">
+								<label>代收</label>
+								<input name="checkbox" value="Item 2" type="checkbox" checked="">
+							</div>
+							<div class="mui-input-row mui-checkbox mui-left">
+								<label>代付</label>
+								<input name="checkbox" value="Item 2" type="checkbox" checked="">
+							</div>
+							<div class="mui-input-row mui-checkbox mui-left">
+								<label>快捷</label>
+								<input name="checkbox" value="Item 1" type="checkbox">
+							</div>
+							<div class="mui-input-row mui-checkbox mui-left">
+								<label>代收</label>
+								<input name="checkbox" value="Item 2" type="checkbox" checked="">
+							</div>
+							<div class="mui-input-row mui-checkbox mui-left">
+								<label>代付</label>
+								<input name="checkbox" value="Item 2" type="checkbox" checked="">
+							</div>
+						</form>
+					</div>
+				</li>
+				<li class="mui-table-view-cell mui-collapse">
+					<a class="mui-navigate-right" href="#">精准营销</a>
+					<div class="mui-collapse-content">
+						<form class="mui-input-group">
+							<div class="mui-input-row mui-checkbox mui-left">
+								<label>网银</label>
+								<input name="checkbox" value="Item 1" type="checkbox">
+							</div>
+							<div class="mui-input-row mui-checkbox mui-left">
+								<label>代收</label>
+								<input name="checkbox" value="Item 2" type="checkbox" checked="">
+							</div>
+							<div class="mui-input-row mui-checkbox mui-left">
+								<label>代付</label>
+								<input name="checkbox" value="Item 2" type="checkbox" checked="">
+							</div>
+							<div class="mui-input-row mui-checkbox mui-left">
+								<label>快捷</label>
+								<input name="checkbox" value="Item 1" type="checkbox">
+							</div>
+							<div class="mui-input-row mui-checkbox mui-left">
+								<label>代收</label>
+								<input name="checkbox" value="Item 2" type="checkbox" checked="">
+							</div>
+							<div class="mui-input-row mui-checkbox mui-left">
+								<label>代付</label>
+								<input name="checkbox" value="Item 2" type="checkbox" checked="">
+							</div>
+						</form>
+					</div>
+				</li>
+			</ul>
+			<div class="my20 px12">
+				<p>没有我从事的行业，为小伙伴们增加一个业务名称。</p>
+				<div class="mui-text-center">
+					<a href="" class="mui-btn"><span class="mui-icon iconfont icon-zengjia "></span> 增加业务</a>
+				</div>
+			</div>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" id="page_index" >
+				<span class="mui-icon iconfont icon-shouye1"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" id="page_message">
+				<span class="mui-icon iconfont icon-tongxunlu"></span>
+				<span class="mui-tab-label">通讯</span>
+			</a>
+			<a class="mui-tab-item" id="page_find">
+				<span class="mui-icon iconfont icon-zhaofuwushangxuanzhong"></span>
+				<span class="mui-tab-label">发现</span>
+			</a>
+			<a class="mui-tab-item" id="page_my">
+				<span class="mui-icon iconfont icon-wode-fuben_fuzhi"></span>
+				<span class="mui-tab-label">我的</span>
+			</a>
+		</nav>
+</body>
+</html>
+
+<script type="text/javascript">
+	        mui.init();
+	        mui("#page_index")[0].addEventListener('tap', function(event) {
+				mui.openWindow({
+					url: 'index.html',
+					id: 'page_index',
+					preload: true,
+					show: {
+						aniShow: 'pop-in'
+					},
+					styles: {
+						popGesture: 'hide'
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+			mui("#page_message")[0].addEventListener('tap', function(event) {
+				mui.openWindow({
+					url: 'message.html',
+					id: 'page_message',
+					preload: true,
+					show: {
+						aniShow: 'pop-in'
+					},
+					styles: {
+						popGesture: 'hide'
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+			mui("#page_find")[0].addEventListener('tap', function(event) {
+				mui.openWindow({
+					url: 'find.html',
+					id: 'page_find',
+					preload: true,
+					show: {
+						aniShow: 'pop-in'
+					},
+					styles: {
+						popGesture: 'hide'
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+			mui("#page_my")[0].addEventListener('tap', function(event) {
+				mui.openWindow({
+					url: 'my.html',
+					id: 'page_my',
+					preload: true,
+					show: {
+						aniShow: 'pop-in'
+					},
+					styles: {
+						popGesture: 'hide'
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+</script>

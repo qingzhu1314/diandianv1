@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/iconfont.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+		<link href="css/icons-extra.css" rel="stylesheet" />
+		<script type="text/javascript" charset="utf-8">
+		</script>
+		<style>
+			.mui-plus .plus {
+				display: inline;
+			}
+			
+			.plus {
+				display: none;
+			}
+			
+			#topPopover {
+				position: fixed;
+				top: 16px;
+				right: 6px;
+			}
+			
+			#topPopover .mui-popover-arrow {
+				left: auto;
+				right: 6px;
+			}
+			
+			span.mui-icon {
+				font-size: 18px;
+			}
+			
+			.mui-popover {
+				height: 150px;
+				width: 150px;
+			}
+			
+			.mui-popover span.mui-icon {
+				margin-right: 10px;
+			}
+			
+			.mui-content {
+				padding: 44px 0px;
+			}
+			
+			.mui-bar-nav.mui-bar .mui-icon.mui-icon-search {
+				margin-right: 12px;
+			}
+			
+			.mui-title {
+				text-align: left;
+			}
+			
+			.mui-bar .mui-title {
+				left: 10px;
+			}
+			
+			.mt15 {
+				margin-top: 16px;
+			}
+			
+			.mui-table-view-chevron .mui-table-view-cell {
+				padding-right: 55px;
+			}
+			
+			.mui-table-view-chevron .mui-table-view-cell>a:not(.mui-btn) {
+				margin-right: -75px;
+			}
+			
+			.mui-navigate-right:after,
+			.mui-push-right:after {
+				right: 30px;
+			}
+			
+			.icon-bg {
+				margin-right: 5px;
+			}
+		</style>
+	</head>
+
+	<body>
+
+		<header class="mui-bar mui-bar-nav">
+			<a id="menu" class="mui-action-menu mui-icon iconfont icon-jia mui-pull-right" href="#topPopover"></a>
+			<a href="search.html" class="mui-icon mui-icon-search mui-pull-right"></a>
+			<h1 class="mui-title">两点</h1>
+		</header>
+
+		<div class="mui-content">
+			<ul class="mui-table-view mui-table-view-chevron">
+				<li class="mui-table-view-cell mui-media">
+					<a class="mui-navigate-right" href="my-jibenxinxi.html">
+						<img class="mui-media-object mui-pull-left head-img" id="head-img" src="images/touxiang.jpg">
+						<div class="mui-media-body">
+							张三 <span class="mui-icon iconfont icon-erweima mui-pull-right c-6 mt15"></span><span class="mui-icon iconfont icon-icon2 mui-badge mui-badge-primary mui-badge-inverted"></span> <span class="mui-icon iconfont icon-icon3 mui-badge mui-badge-danger mui-badge-inverted"></span>
+							<p class="mui-ellipsis mt5">点点号:123456789</p>
+						</div>
+					</a>
+				</li>
+			</ul>
+
+			<ul class="mui-table-view mt15">
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" href="my-jibenxinxi.html"><span class="icon-bg bg-warning-s"><span class="mui-icon iconfont icon-jibenxinxi"></span></span> 基本信息</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" href="my-danwei.html"><span class="icon-bg bg-success-s"><span class="mui-icon iconfont icon-danweixinxi"></span></span> 公司信息</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" href="my-jianli.html"><span class="icon-bg bg-danger-s"><span class="mui-icon iconfont icon-gerenjianli"></span></span> 个人简历</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" href="my-yingsi.html"><span class="icon-bg bg-warning-s"><span class="mui-icon iconfont icon-yinsimimaguanli"></span></span> 隐私管理</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view mt15">
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right" href="setting.html"><span class="icon-bg bg-primary-s"><span class="mui-icon iconfont icon-icon09"></span></span> 设置</a>
+				</li>
+			</ul>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" id="page_index" >
+				<span class="mui-icon iconfont icon-shouye1"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" id="page_message">
+				<span class="mui-icon iconfont icon-tongxunlu"></span>
+				<span class="mui-tab-label">通讯</span>
+			</a>
+			<a class="mui-tab-item" id="page_find">
+				<span class="mui-icon iconfont icon-zhaofuwushangxuanzhong"></span>
+				<span class="mui-tab-label">发现</span>
+			</a>
+			<a class="mui-tab-item" id="page_my">
+				<span class="mui-icon iconfont icon-wode-fuben_fuzhi"></span>
+				<span class="mui-tab-label">我的</span>
+			</a>
+		</nav>
+		<!--右上角弹出菜单-->
+		<div id="topPopover" class="mui-popover">
+			<div class="mui-popover-arrow"></div>
+			<div class="mui-scroll-wrapper">
+				<div class="mui-scroll">
+					<ul class="mui-table-view">
+						<li class="mui-table-view-cell">
+							<a href="#"><span class="mui-icon iconfont icon-icon"></span> 添加朋友</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a href="#"><span class="mui-icon iconfont icon-saoyisao"></span> 扫一扫</a>
+						</li>
+						<li class="mui-table-view-cell">
+							<a href="#"><span class="mui-icon iconfont icon-refresh"></span> 刷新需求</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+		</div>
+</body>
+</html>
+<script type="text/javascript">
+	        mui.init();
+	        mui("#page_index")[0].addEventListener('tap', function(event) {
+				mui.openWindow({
+					url: 'index.html',
+					id: 'page_index',
+					preload: true,
+					show: {
+						aniShow: 'pop-in'
+					},
+					styles: {
+						popGesture: 'hide'
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+			mui("#page_message")[0].addEventListener('tap', function(event) {
+				mui.openWindow({
+					url: 'message.html',
+					id: 'page_message',
+					preload: true,
+					show: {
+						aniShow: 'pop-in'
+					},
+					styles: {
+						popGesture: 'hide'
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+			mui("#page_find")[0].addEventListener('tap', function(event) {
+				mui.openWindow({
+					url: 'find.html',
+					id: 'page_find',
+					preload: true,
+					show: {
+						aniShow: 'pop-in'
+					},
+					styles: {
+						popGesture: 'hide'
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+			mui("#page_my")[0].addEventListener('tap', function(event) {
+				mui.openWindow({
+					url: 'my.html',
+					id: 'page_my',
+					preload: true,
+					show: {
+						aniShow: 'pop-in'
+					},
+					styles: {
+						popGesture: 'hide'
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+</script>

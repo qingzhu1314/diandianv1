@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<script src="js/mui.min.js"></script>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/iconfont.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+		<link href="css/icons-extra.css" rel="stylesheet" />
+		<script type="text/javascript" charset="utf-8">
+		</script>
+		<style>
+			.mui-plus .plus {
+				display: inline;
+			}
+			
+			.plus {
+				display: none;
+			}
+			
+			#topPopover {
+				position: fixed;
+				top: 16px;
+				right: 6px;
+			}
+			
+			#topPopover .mui-popover-arrow {
+				left: auto;
+				right: 6px;
+			}
+			
+			p {
+				text-indent: 22px;
+			}
+			
+			span.mui-icon {
+				font-size: 18px;
+			}
+			
+			.mui-popover {
+				height: 150px;
+				width: 150px;
+			}
+			
+			.mui-popover span.mui-icon {
+				margin-right: 10px;
+			}
+			
+			.mui-content {
+				padding: 44px 0px;
+				margin: 0;
+			}
+			
+			.mui-bar-nav.mui-bar .mui-icon.mui-icon-search {
+				margin-right: 12px;
+			}
+			
+			h4 {
+				font-size: 16px;
+			}
+			
+			.mui-btn {
+				padding: 2px 10px;
+				line-height: 1.32;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-icon mui-icon-left-nav mui-pull-left" onclick="window.history.go(-1);"></a>
+			<h1 class="mui-title">第三方支付</h1>
+		</header>
+
+		<div class="mui-content">
+			<div class="px12 my20">
+				<a href="index-add-hy-author.html" class="mui-btn mui-pull-right mui-btn-warning">作者</a>
+				<a href="index-add-hy-1-edit.html" class="mui-btn mui-pull-right mui-btn-primary mr10">编辑</a>
+				<h4 class="mui-inline">行业服务</h4></div>
+			<ul class="mui-table-view">
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">网银</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">代付</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">代收</a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a class="mui-navigate-right">快捷</a>
+				</li>
+			</ul>
+			<div>
+				<div class="px12 mb10 mt20"><span class="mui-icon iconfont icon-information c-6 f13"></span> 什么是第三方支付?</div>
+				<div class="bg-f p10 debug-gray text-box">
+					<p>第三方支付是指具备一定实力和信誉保障的独立机构，采用与各大银行签约的方式，通过与银行支付结算系统接口对接而促成交易双方进行交易的网络支付模式。 在第三方支付模式，买方选购商品后，使用第三方平台提供的账户进行货款支付（支付给第三方），并由第三方通知卖家货款到账、要求发货；买方收到货物，检验货物，并且进行确认后，再通知第三方付款；第三方再将款项转至卖家账户。 2017年1月13日下午，中国人民银行发布了一项支付领域的新规定《中国人民银行办公厅关于实施支付机构客户备付金集中存管有关事项的通知》，明确了第三方支付机构在交易过程中，产生的客户备付金，今后将统一交存至指定账户，由央行监管，支付机构不得挪用、占用客户备付金。
+					</p>
+					<p>产生原因</p>
+
+					<p>第三方支付采用支付结算方式。按支付程序分类，结算方式可分为一步支付方式和分步支付方式，前者包括现金结算、票据结算（如支票、本票、银行汇票、承兑汇票）、汇转结算（如电汇、网上支付），后者包括信用证结算、保函结算、第三方支付结算。 在社会经济活动中，结算归属于贸易范畴。贸易的核心是交换。交换是交付标的与支付货币两大对立流程的统一。在自由平等的正常主体之间，交换遵循的原则是等价和同步。同步交换，就是交货与付款互为条件，是等价交换的保证。 在实际操作中，对于现货标的的面对面交易，同步交换容易实现；但许多情况下由于交易标的的流转验收（如商品货物的流动、服务劳务的转化）需要过程，货物流和资金流的异步和分离的矛盾不可避免，同步交换往往难以实现。而异步交换，先收受对价的一方容易违背道德和协议，破坏等价交换原则，故先支付对价的一方往往会受制于人，自陷被动、弱势的境地，承担风险。异步交换必须附加信用保障或法律支持才能顺利完成。 同步交换，可以规避不等价交换的风险，因此为确保等价交换要遵循同步交换的原则。这就要求支付方式应与交货方式相适配，对当面现货交易，适配即时性一步支付方式；对隔面或期货交易，适配过程化分步支付方式。过程化分步支付方式应合了交易标的流转验收的过程性特点，款项从启动支付到所有权转移至对方不是一步完成，而是在中间增加中介托管环节，由原来的直接付转改进到间接汇转，业务由一步完成变为分步操作，从而形成一个可监可控的过程，按步骤有条件进行支付。这样就可货走货路，款走款路，两相呼应，同步起落，使资金流适配货物流进程达到同步相应的效果，使支付结算方式更科学化，合理化的应合市场需求。 传统的支付方式往往是简单的即时性直接付转，一步支付。其中钞票结算和票据结算适配当面现货交易，可实现同步交换；汇转结算中的电汇及网上直转也是一步支付，适配隔面现货交易，但若无信用保障或法律支持，会导致异步交换容易引发非等价交换风险，现实中买方先付款后不能按时按质按量收获标的，卖方先交货后不能按时如数收到价款，被拖延、折扣或拒付等引发经济纠纷的事件时有发生。 在现实的有形市场，异步交换权且可以附加信用保障或法律支持来进行，而在虚拟的无形市场，交易双方互不认识，不知根底，故此，支付问题曾经成为电子商务发展的瓶颈之一，卖家不愿先发货，怕货发出后不能收回货款；买家不愿先支付，担心支付后拿不到商品或商品质量得不到保证。博弈的结果是双方都不愿意先冒险，网上购物无法进行。 为迎合同步交换的市场需求，第三方支付应运而生。第三方是买卖双方在缺乏信用保障或法律支持的情况下的资金支付“中间平台”，买方将货款付给买卖双方之外的第三方，第三方提供安全交易服务，其运作实质是在收付款人之间设立中间过渡账户，使汇转款项实现可控性停顿，只有双方意见达成一致才能决定资金去向。第三方担当中介保管及监督的职能，并不承担什么风险，所以确切的说，这是一种支付托管行为，通过支付托管实现支付保证。
+					</p>
+					<p>实现原理
+					</p>
+					<p>风险与安全
+					</p>
+					<p>行业分析
+					</p>
+					<p>最新行业数据</p>
+				</div>
+			</div>
+		</div>
+		<nav class="mui-bar mui-bar-tab">
+			<a class="mui-tab-item mui-active" id="page_index" >
+				<span class="mui-icon iconfont icon-shouye1"></span>
+				<span class="mui-tab-label">首页</span>
+			</a>
+			<a class="mui-tab-item" id="page_message">
+				<span class="mui-icon iconfont icon-tongxunlu"></span>
+				<span class="mui-tab-label">通讯</span>
+			</a>
+			<a class="mui-tab-item" id="page_find">
+				<span class="mui-icon iconfont icon-zhaofuwushangxuanzhong"></span>
+				<span class="mui-tab-label">发现</span>
+			</a>
+			<a class="mui-tab-item" id="page_my">
+				<span class="mui-icon iconfont icon-wode-fuben_fuzhi"></span>
+				<span class="mui-tab-label">我的</span>
+			</a>
+		</nav>
+</body>
+</html>
+
+<script type="text/javascript">
+	        mui.init();
+	        mui("#page_index")[0].addEventListener('tap', function(event) {
+				mui.openWindow({
+					url: 'index.html',
+					id: 'page_index',
+					preload: true,
+					show: {
+						aniShow: 'pop-in'
+					},
+					styles: {
+						popGesture: 'hide'
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+			mui("#page_message")[0].addEventListener('tap', function(event) {
+				mui.openWindow({
+					url: 'message.html',
+					id: 'page_message',
+					preload: true,
+					show: {
+						aniShow: 'pop-in'
+					},
+					styles: {
+						popGesture: 'hide'
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+			mui("#page_find")[0].addEventListener('tap', function(event) {
+				mui.openWindow({
+					url: 'find.html',
+					id: 'page_find',
+					preload: true,
+					show: {
+						aniShow: 'pop-in'
+					},
+					styles: {
+						popGesture: 'hide'
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+			mui("#page_my")[0].addEventListener('tap', function(event) {
+				mui.openWindow({
+					url: 'my.html',
+					id: 'page_my',
+					preload: true,
+					show: {
+						aniShow: 'pop-in'
+					},
+					styles: {
+						popGesture: 'hide'
+					},
+					waiting: {
+						autoShow: false
+					}
+				});
+			});
+</script>
